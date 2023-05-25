@@ -1,15 +1,15 @@
 version: '3.9'
 services:
   app:
-      container_name: actions-aws-example
-      build: .
-      restart: always
+    container_name: actions-aws-example
+    build: .
+    restart: always
 
-      ## env_file: .env
+    env_file: .env
 
-      volumes:
-        - .:/app
-        - /app/node_modules
+    volumes:
+      - .:/app
+      - /app/node_modules
 
-      ports:
-        - 3000:3000
+    ports:
+      - 3000:3000
